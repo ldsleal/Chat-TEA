@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assstente TEA</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body class="bg-white text-black font-sans">
+    <!-- Header Section -->
+<header class="relative">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/TEA-capa.png" alt="vestiveis" class="w-full h-auto"></div>
+            <div class="swiper-slide"><img src="img/image1.png" alt="vestiveis" class="w-full h-auto"></div>
+            <div class="swiper-slide"><img src="img/image1.png" alt="vestiveis" class="w-full h-auto"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</header>
+
+    <!-- Main Content Section -->
+    <main class="container mx-auto px-4 py-8 ">
+        <div class="flex flex-col items-center justify-center">
+            <h1 class="text-black text-4xl font-bold">Assistente TEA</h1>
+            <div class="divider-gradient h-1 mt-2"></div>
+        </div>        
+        <iframe
+        src="https://assistente-tea.streamlit.app//?embedded=true"
+        height="1000"
+        width="100%"
+        ></iframe>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
